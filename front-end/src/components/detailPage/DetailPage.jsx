@@ -5,10 +5,12 @@ import RectangleImage from "../../assets/Rectangle.png";
 import Slide from "../../assets/Slide.png";
 import { FaStar } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
+import CardSection from "./CardSection";
 
 function DetailPage() {
   return (
     <div className="bg-gray-100 ">
+      <div className="bg-gray-100 h-0.5"></div>
       <NavBar />
       <div className="flex my-44 ">
         {/* ----Left---- */}
@@ -124,75 +126,9 @@ function DetailPage() {
       <div>
         <h1 className="text-5xl ml-32 font-bold">Recommended for you</h1>
         <div className="flex justify-between mx-16 -mt-10">
-          {/* ********Card-1***** */}
-          <div className="bg-white scale-75 shadow-lg shadow-white-500/50 text-2xl w-fit my-10 rounded-3xl">
-            <img src={RectangleImage} alt="" />
-            <div className="m-5">
-              <div className="flex justify-between">
-                <h1 className="text-xl font-bold">Michael Jackson</h1>
-                <span>
-                  <b>₹4,370</b>
-                </span>
-              </div>
-              <p className="text-2xl mt-5">
-                I will do business evaluation and <br /> corporate services
-              </p>
-              <div className="flex text-2xl mt-10 gap-2">
-                <FaStar className="text-blue-600 my-0.5" />
-                <span className="text-blue-600">4.8</span>
-                <span>(89)</span>
-              </div>
-              <button className="inline-flex w-full mt-5 bg-blue-500 px-48 py-2.5 text-2xl rounded-xl font-medium text-white ring-1 ring-inset">
-                View service
-              </button>
-            </div>
-          </div>
-          {/* ********Card-2***** */}
-          <div className="bg-white shadow-lg scale-75 shadow-white-500/50 text-2xl w-fit my-10 rounded-3xl">
-            <img src={RectangleImage} alt="" />
-            <div className="m-5">
-              <div className="flex justify-between">
-                <h1 className="text-xl font-bold">Michael Jackson</h1>
-                <span>
-                  <b>₹4,370</b>
-                </span>
-              </div>
-              <p className="text-2xl mt-5">
-                I will do business evaluation and <br /> corporate services
-              </p>
-              <div className="flex text-2xl mt-10 gap-2">
-                <FaStar className="text-blue-600 my-0.5" />
-                <span className="text-blue-600">4.8</span>
-                <span>(89)</span>
-              </div>
-              <button className="inline-flex w-full mt-5 bg-blue-500 px-48 py-2.5 text-2xl rounded-xl font-medium text-white ring-1 ring-inset">
-                View service
-              </button>
-            </div>
-          </div>
-          {/* ********Card-3***** */}
-          <div className="bg-white shadow-lg shadow-white-500/50 text-2xl w-fit scale-75 my-10 rounded-3xl">
-            <img src={RectangleImage} alt="" />
-            <div className="m-5">
-              <div className="flex justify-between">
-                <h1 className="text-xl font-bold">Michael Jackson</h1>
-                <span>
-                  <b>₹4,370</b>
-                </span>
-              </div>
-              <p className="text-2xl mt-5">
-                I will do business evaluation and <br /> corporate services
-              </p>
-              <div className="flex text-2xl mt-10 gap-2">
-                <FaStar className="text-blue-600 my-0.5" />
-                <span className="text-blue-600">4.8</span>
-                <span>(89)</span>
-              </div>
-              <button className="inline-flex w-full mt-5 bg-blue-500 px-48 py-2.5 text-2xl rounded-xl font-medium text-white ring-1 ring-inset">
-                View service
-              </button>
-            </div>
-          </div>
+          <CardSection />
+          <CardSection />
+          <CardSection />
         </div>
       </div>
       <Footer />

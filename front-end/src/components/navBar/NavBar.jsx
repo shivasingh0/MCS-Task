@@ -1,15 +1,23 @@
 import React from "react";
 import DropDown from "./DropDown";
 import Logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
+  const navigate = useNavigate();
+
+  const NavigateHome = () => {
+    navigate('/')
+  }
+
   return (
     <div className="flex relative justify-around my-10">
       <div className="flex ">
         <img
-          className="w-25 h-19"
+          className="w-25 cursor-pointer h-19"
           src={Logo}
           alt="logo.png"
+          onClick={NavigateHome}
         />
         <DropDown className=" text-2xl" />
       </div>

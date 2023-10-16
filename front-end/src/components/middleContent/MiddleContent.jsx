@@ -18,12 +18,12 @@ function MiddleContent() {
         </p>
       </div>
       {/* ------Cards------ */}
-      <div className="flex justify-center ">
+      <div className="flex gap-20 justify-center ">
         <Card />
         <Card />
         <Card />
       </div>
-      <div className="flex justify-center">
+      <div className="flex gap-20 justify-center">
         <Card />
         <Card />
         <Card />
