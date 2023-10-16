@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundImage from "../../assets/GradientBackground.png";
 import Vector from "../../assets/Vector.png";
+import Group from "../../assets/Group.png";
 
 export function FirstBackgroundImage() {
   return (
@@ -13,7 +14,15 @@ export function FirstBackgroundImage() {
 export function SecondBackgroundImage() {
     return (
         <div>
-        <img className="w-ful -my-80 absolute w-full" src={Vector} alt="" />
+        <img className="-my-80 absolute w-full" src={Vector} alt="" />
         </div>
       )
+}
+
+export function ThirdBackgroundImage() {
+  return (
+    <div>
+      <img  className=" absolute w-full" src={Group} alt="" />
+    </div>
+  )
 }
