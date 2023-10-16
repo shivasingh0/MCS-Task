@@ -1,9 +1,16 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 import ImageFirst from "../../assets/Picture.png";
 import ImageSecond from "../../assets/Picture1.png";
 import ImageThird from "../../assets/Picture2.png";
 
 function UpperContent() {
+  const navigate = useNavigate()
+
+  const Navigate = () => {
+    navigate('/detailpage')
+  }
+
   return (
     <div>
       <div className="flex max-h-fit relative">
@@ -30,9 +37,9 @@ function UpperContent() {
               placeholder="Search by name"
             />
             {/* Search button */}
-            <span className="inline-flex items-center bg-blue-600 px-20 py-8 text-xl rounded-xl font-medium text-white ring-1 ring-inset ring-blue-700/10">
-              Register
-            </span>
+            <button onClick={Navigate} className="inline-flex items-center cursor-pointer bg-blue-600 px-20 py-8 text-xl rounded-xl font-medium text-white ring-1 ring-inset ring-blue-700/10">
+              Search
+            </button>
           </div>
         </div>
         {/*----------------------------- Right -----------------------------*/}
